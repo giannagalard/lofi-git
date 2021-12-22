@@ -11,8 +11,10 @@ html {
   height: 100vh;
   width: 100vw;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  align-items: flex-end;
   background-color: #d3b4c4;
+  flex-direction: column;
 }
 
 /* Set Background Image for Mobile and small devices */
@@ -26,8 +28,7 @@ html {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #CCAEB2;
-
+  background-color: #ccaeb2;
 }
 
 /* Set Cute Font :-) */
@@ -43,8 +44,6 @@ html {
   display: flex;
   position: absolute;
   width: 47%;
-  flex-direction: column;
-  align-items: center;
 }
 
 /* Font and Bordering for Welcome Text */
@@ -100,10 +99,10 @@ html {
 .textContainer {
   display: flex;
   justify-content: flex-start;
-  width: 100%;
+  width: 50%;
 }
 
 /* Make button independent of text */
 .buttonContainer {
-  width: 100%;
+  width: 50%;
 }

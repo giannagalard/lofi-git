@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Box
         component="div"
-        sx={{ display: { xs: "none", md: "block" } }}
+        sx={{ display: { xs: "none", sm: "none", md: "none", lg: "block" } }}
         className="welcome"
       >
         <div className="bg-image">
@@ -17,7 +17,7 @@ export default function Home() {
             </h1>{" "}
           </div>
           <div className="buttonContainer">
-            {" "}
+            {" "} 
             <button className="loginButton">Login</button>{" "}
             <h3 className="orText">OR</h3>
             <SearchBar />
@@ -27,7 +27,7 @@ export default function Home() {
 
       <Box
         component="div"
-        sx={{ display: { xs: "block", lg: "none" } }}
+        sx={{ display: { xs: "block", sm: "block", md: "block", lg: "none" } }}
         className="welcome"
       >
         <div className="phone-image">
