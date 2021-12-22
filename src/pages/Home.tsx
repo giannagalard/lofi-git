@@ -13,8 +13,8 @@ export default function Home() {
         <div className="buttonContainer">
           {" "}
           <button className="loginButton">Login</button>{" "}
-            <h3 className="orText">OR</h3>
-            <SearchBar/>
+          <h3 className="orText">OR</h3>
+          <SearchBar />
         </div>
       </div>
     </div>

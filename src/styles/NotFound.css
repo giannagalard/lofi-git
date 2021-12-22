@@ -1,0 +1,128 @@
+/* Cutest 404 page youll ever see */
+
+/* Set image for 404 page */
+.nf-image {
+  background-image: url("../images/404.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  /* move background image down a bit */
+  background-position-y: +350px;
+}
+
+/* Set Cute Font :-) */
+@font-face {
+  font-family: CherryBomb;
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/CherryBomb.ttf);
+}
+
+.oopsieWoopsie {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.nfText {
+  font-family: CherryBomb;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 121px;
+  line-height: 50px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #cd7765;
+  -webkit-text-stroke: 3px #210a0d;
+}
+
+.nfSubHeader {
+  font-family: CherryBomb;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 43px;
+  line-height: 1px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #cd7765;
+  -webkit-text-stroke: 3px #210a0d;
+}
+
+.nfMicroSubHeader {
+  font-family: CherryBomb;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #210a0d;
+}
+
+.backButton {
+  font-family: CherryBomb;
+  font-size: 16px;
+  background-color: #78414a;
+  border: none;
+  color: #cd7765;
+  padding: 9px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  width: 10%;
+  box-shadow: 0 9px #3b2025;
+  border-radius: 7px;
+}
+
+.nfButtonContainer {
+  width: 266px;
+  height: 50px;
+  position: absolute;
+  left: 47.5%;
+  top: 86.3%;
+}
+
+/* fun animated background */
+.uwuOwO {
+  background: linear-gradient(270deg, #e7d6de, #deadcf, #a8c6de, #dd6789);
+  background-size: 800% 800%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
