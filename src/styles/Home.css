@@ -1,0 +1,94 @@
+html {
+  overflow-x: hidden;
+}
+
+/* Set Background Image 100vh */
+.bg-image {
+  background-image: url("../images/sailormoon.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #d3b4c4;
+}
+
+/* Set Cute Font :-) */
+@font-face {
+  font-family: CherryBomb;
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/CherryBomb.ttf);
+}
+
+/* Welcome To Lofi Git */
+.welcome {
+  display: flex;
+  position: absolute;
+  width: 47%;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Font and Bordering for Welcome Text */
+.welcomeText {
+  font-family: CherryBomb;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 43px;
+  line-height: 50px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #fad5bb;
+  -webkit-text-stroke: 3px #78414a;
+}
+
+.orText {
+  font-family: CherryBomb;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 43px;
+  line-height: 1px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-left: 6px;
+
+  color: #fad5bb;
+  -webkit-text-stroke: 3px #78414a;
+}
+
+/* Login Button */
+.loginButton {
+  font-family: CherryBomb;
+  font-size: 16px;
+  background-color: #78414a;
+  border: none;
+  color: #fad5bb;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 9px #3b2025;
+  border-radius: 7px;
+}
+
+.loginButton:active {
+  background-color: #78414a;
+  box-shadow: 0 5px #572f36;
+  transform: translateY(3px);
+}
+
+.textContainer {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+/* Make button independent of text */
+.buttonContainer {
+  width: 100%;
+}
