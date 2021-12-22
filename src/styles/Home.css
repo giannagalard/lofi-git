@@ -15,6 +15,21 @@ html {
   background-color: #d3b4c4;
 }
 
+/* Set Background Image for Mobile and small devices */
+.phone-image {
+  background-image: url("../images/croppedSailorMoon.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #CCAEB2;
+
+}
+
 /* Set Cute Font :-) */
 @font-face {
   font-family: CherryBomb;
