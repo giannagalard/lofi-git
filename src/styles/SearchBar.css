@@ -1,5 +1,60 @@
-/* Create Search Bar */
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Arvo&family=Oswald:wght@300&family=Patrick+Hand&display=swap');
+/* Build Search Bar */
 
-/* .searchBar {
+/* Search Bar Container */
+.searchContainer { 
+    display: inline-flex;
+    flex: 1 1 300px;
+    position: relative;
+    border-radius: 7px;
+    overflow: hidden;
+    height: 38px;
+    box-shadow: 0 9px #3b2025;
+    border-radius: 7px;
+}
 
-} */
+/* Search Icon */
+.searchIcon { 
+    padding: 0.5rem;
+    background: #78414A;
+    color: #FAD5BB;
+    display: flex;
+    align-items: center;
+}
+
+ /* Search Bar */
+.searchBar {
+    border: 0;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    flex: 1;
+    background: #FAD5BB;
+    padding-left: 5px;
+    
+    font-family: 'Patrick Hand', cursive;
+}
+
+/* Search Button */
+.searchButton {
+    background: #78414A;
+    border: 0;
+    color: #FAD5BB;
+    padding: 0.5rem;
+    border-radius: 0;
+}
+
+.searchBar::placeholder{
+    font-family: CherryBomb;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.searhBar::-ms-input-placeholder{
+    font-family: CherryBomb;
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* gets rid of nasty border */
+.searchBar:focus {
+    outline: 0;
+}

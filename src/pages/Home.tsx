@@ -1,3 +1,4 @@
+import SearchBar from "../components/SearchBar";
 import "../styles/Home.css";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
           {" "}
           <button className="loginButton">Login</button>{" "}
             <h3 className="orText">OR</h3>
+            <SearchBar/>
         </div>
       </div>
     </div>
