@@ -18,8 +18,8 @@ export default function SearchBar() {
         type="search"
         placeholder="Search for a user"
         onKeyPress = {(e) => clickyBlicky(e)}
-      />
-      <Link to={{ pathname: `/user/${search}` }} className="searchButton ">
+      /> 
+      <Link to={{ pathname: `/user/${search}` }} className="searchButton " >
         {" "}
         Submit{" "}
       </Link>

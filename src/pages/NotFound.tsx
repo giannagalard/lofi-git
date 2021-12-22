@@ -13,7 +13,7 @@ export default function NotFound() {
         }}
       >
         <h1>Page Not Found</h1>
-        <Link className="card-link" to="/employees">
+        <Link className="card-link" to="/home">
           Back
         </Link>
       </div>

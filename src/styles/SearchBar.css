@@ -41,6 +41,8 @@
     padding: 0.5rem;
     border-radius: 0;
     text-decoration: none;
+    src: url(../fonts/CherryBomb.ttf);
+    font-family: CherryBomb;
 }
 
 .searchBar::placeholder{
