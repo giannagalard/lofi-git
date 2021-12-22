@@ -1,16 +1,16 @@
 /* Cutest 404 page youll ever see */
 
 /* Set image for 404 page */
-.nf-image {
-  background-image: url("../images/404.gif");
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw;
+.notFoundTextContainer {
   display: flex;
-  justify-content: flex-end;
-  /* move background image down a bit */
-  background-position-y: +350px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.error {
+  width: 69%;
+  border-radius: 5px;
+  border: 6px solid #905aa2;
 }
 
 /* Set Cute Font :-) */
@@ -27,19 +27,17 @@
   width: 100%;
   flex-direction: column;
   align-items: center;
-  margin-top: 2%;
 }
 
 .nfText {
   font-family: CherryBomb;
   font-style: normal;
   font-weight: normal;
-  font-size: 121px;
-  line-height: 50px;
+  font-size: 120px;
+  line-height: 10px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-align: center;
-
   color: #cd7765;
   -webkit-text-stroke: 3px #210a0d;
 }
@@ -48,8 +46,8 @@
   font-family: CherryBomb;
   font-style: normal;
   font-weight: normal;
+  margin: 0;
   font-size: 43px;
-  line-height: 1px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-align: center;
@@ -63,7 +61,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 21px;
-  line-height: 20px;
+  line-height: 10px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-align: center;
@@ -90,13 +88,15 @@
 .nfButtonContainer {
   width: 266px;
   height: 50px;
-  position: absolute;
-  left: 47.7%;
-  top: 86.3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* fun animated background */
 .uwuOwO {
+  height: 100vh;
+  width: 100vw;
   background: linear-gradient(270deg, #e7d6de, #deadcf, #a8c6de, #dd6789);
   background-size: 800% 800%;
 
