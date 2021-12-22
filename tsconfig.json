@@ -6,6 +6,9 @@
       "dom.iterable",
       "esnext"
     ],
+    "paths": {
+      "dotenv": ["./node_modules/dotenv/lib"]
+    },
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
