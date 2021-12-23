@@ -11,7 +11,7 @@
   -webkit-filter: blur(8px);
   position: fixed;
   z-index: -1;
-  background-color: value([--user-bg-color]);
+  background-color: var(--user-bg-color);
 }
 
 .upperText {
@@ -104,7 +104,7 @@
   font-family: Cherry Bomb;
 }
 
-.twitter{
+.twitter {
   font-size: 20px !important;
 }
 
@@ -117,4 +117,10 @@
   color: var(--user-username-text-color);
   text-align: center;
   -webkit-text-stroke: 3px var(--user-username-text-border);
+}
+
+@media screen and (max-width: 768px) {
+  .bg-blur {
+    background-image: url("../images/croppedSailorMoon.png");
+  }
 }

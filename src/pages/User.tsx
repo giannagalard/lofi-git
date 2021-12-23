@@ -9,6 +9,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import BusinessIcon from "@mui/icons-material/Business";
 import TwitterIcon from '@mui/icons-material/Twitter';
 import Loading from "../components/Loading";
+import DownloadIcon from '@mui/icons-material/Download';
 import UserNotFound from "../components/UserNotFound";
 
 export default function User() {
@@ -16,7 +17,7 @@ export default function User() {
     background: "transparent",
     text: "#ffffff",
     level4: "#A66681",
-    level3: "#D685A6",
+    level3: "#B16E87",
     level2: "#DA8598",
     level1: "#DA9EA6",
     level0: "#D3B4C4",
@@ -38,7 +39,9 @@ export default function User() {
   return (
     <>
       <div className="bg-blur"></div>
-      <div className="mainContainer">
+      <Box 
+      className="mainContainer"
+      >
         <div className="container">
           {isLoading === true ? (
             <Loading />
@@ -158,7 +161,7 @@ export default function User() {
             <UserNotFound />
           )}
         </div>
-      </div>
+      </Box>
     </>
   );
 }
