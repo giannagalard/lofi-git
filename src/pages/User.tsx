@@ -4,7 +4,7 @@ import { fetchData } from "../api/github";
 import { Grid, Typography, Avatar } from "@mui/material";
 import GitHubCalendar from "react-github-calendar";
 import "../styles/User.css";
-import { createTheme, Box } from "@mui/system";
+import { createTheme, Box, fontStyle } from "@mui/system";
 import { ThemeProvider } from "@emotion/react";
 
 export default function User() {
@@ -24,6 +24,13 @@ export default function User() {
           }
         `,
       },
+    },
+  });
+
+  const statsTheme = createTheme({
+    typography: {
+      fontFamily: "Patrick Hand",
+      fontStyle: "cursive",
     },
   });
 
@@ -78,7 +85,7 @@ export default function User() {
                 <Grid item xs={12} md={12}></Grid>
 
                 {/* AVATAR */}
-                <Grid item xs={12} md={2}>
+                <Grid item xs={12} md={2} margin={"top"}>
                   <Avatar
                     sx={{ width: 150, height: 150, margin: "auto" }}
                     src={user.avatar_url}
@@ -107,44 +114,46 @@ export default function User() {
               </Grid>
 
               {/* USER STATS */}
-              <Box className="userStats">
+              <Box className="userStats" margin={"15px"}>
+              <ThemeProvider theme={statsTheme}> 
                 <Grid className="statsContainer" container>
                   {user.followers === null ? undefined : (
                     <Grid className="card" item xs={12} md={3}>
-                      <Typography noWrap={false} variant="h5">
+                      <Typography className="statsText" noWrap={false} variant="h5">
                         {user.followers} Followers
                       </Typography>
                     </Grid>
                   )}
                   {user.following === 0 ? undefined : (
                     <Grid className="card" item xs={12} md={3}>
-                      <Typography noWrap={false} variant="h5">
+                      <Typography className="statsText" noWrap={false} variant="h5">
                         {user.following} Following
                       </Typography>
                     </Grid>
                   )}
                   {user.following === 0 ? undefined : (
                     <Grid className="card" item xs={12} md={3}>
-                      <Typography noWrap={false} variant="h5">
+                      <Typography className="statsText" noWrap={false} variant="h5">
                         {user.public_repos} Repos
                       </Typography>
                     </Grid>
                   )}
                   {user.location === null ? undefined : (
                     <Grid className="card" item xs={12} md={3}>
-                      <Typography noWrap={false} variant="h5">
+                      <Typography className="statsText" noWrap={false} variant="h5">
                         {user.location}
                       </Typography>
                     </Grid>
                   )}
                   {user.twitter_username === null ? undefined : (
                     <Grid className="card" item xs={12} md={3}>
-                      <Typography noWrap={false} variant="h5">
+                      <Typography className="statsText" noWrap={false} variant="h5">
                         @{user.twitter_username}
                       </Typography>
                     </Grid>
                   )}
                 </Grid>
+              </ThemeProvider>
               </Box>
 
               {/* GITHUB ACTIVITY */}

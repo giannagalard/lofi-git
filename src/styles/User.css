@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Arvo&family=Oswald:wght@300&family=Patrick+Hand&display=swap');
+
+
 .bg-blur {
   background-image: url("../images/sailormoon.jpg");
   background-size: contain;
@@ -30,11 +33,16 @@
   src: url(../fonts/CherryBomb.ttf);
 }
 
+@font-family {
+  font-family: 'Patrick Hand', cursive;
+}
 .usernameText {
   font-family: CherryBomb;
   font-style: normal;
   font-weight: normal;
   font-size: 43px;
+  color: #CA8497;
+  -webkit-text-stroke: 3px #604450;
 }
 
 .lofiText {
@@ -44,7 +52,8 @@
   font-size: 30px;
   display: flex;
   justify-content: center;
-  
+  color: #CA8497;
+  -webkit-text-stroke: 3px #604450;
 }
 
 .mainContainer {
@@ -56,4 +65,11 @@
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
+  color: #442533;
+}
+
+.statsText {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 43px;
+  color: #442533;
 }
