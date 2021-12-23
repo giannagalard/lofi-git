@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { fetchData } from "../api/github";
 import { Grid, Typography, Avatar } from "@mui/material";
 import GitHubCalendar from "react-github-calendar";
+import "../styles/User.css"
 
 export default function User() {
   const colourTheme = {
@@ -22,7 +23,9 @@ export default function User() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
-    <div>
+    <>
+    <div className="bg-image"></div>
+    <div className="container">
       {valid === false ? (
         <h1>Invalid User</h1>
       ) : (
@@ -64,34 +67,34 @@ export default function User() {
             </Grid>
           </Grid>
           {/* USER STATS */}
-          <Grid container>
+          <Grid className="statsContainer"container>
             {user.followers === null ? undefined : (
-              <Grid item xs={12} md={3}>
+              <Grid className="card" item xs={12} md={3}>
               <Typography noWrap={false} variant="h5">
                 {user.followers} Followers
               </Typography></Grid>
             )}
             {user.following === 0 ? undefined : (
-              <Grid item xs={12} md={3}>
+              <Grid className="card" item xs={12} md={3}>
               <Typography noWrap={false} variant="h5">
                 {user.following} Following
               </Typography></Grid>
             )}
             {user.following === 0 ? undefined : (
-              <Grid item xs={12} md={3}>
+              <Grid className="card" item xs={12} md={3}>
               <Typography noWrap={false} variant="h5">
                 {user.public_repos} Repos
                 </Typography>
               </Grid>
             )}
             {user.location === null ? undefined : (
-              <Grid item xs={12} md={3}>
+              <Grid className="card" item xs={12} md={3}>
               <Typography noWrap={false} variant="h5">
                 {user.location}
               </Typography></Grid>
             )}
             {user.twitter_username === null ? undefined : (
-              <Grid item xs={12} md={3}>
+              <Grid className="card" item xs={12} md={3}>
               <Typography noWrap={false} variant="h5">
                 @{user.twitter_username}
               </Typography></Grid>
@@ -114,5 +117,6 @@ export default function User() {
         </div>
       )}
     </div>
+    </>
   );
 }
