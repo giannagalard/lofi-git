@@ -18,9 +18,12 @@ code {
   --home-text-color: #fad5bb;
   --home-text-border: #78414a;
   
-  --login-button-background:#78414a;
-  --login-button-shadow:#3b2025;
-  --login-button-pressed: #572f36;
+  --button-background:#78414a;
+  --button-shadow:#3b2025;
+  --button-pressed: #572f36;
 
+  --gif-border: #905aa2;
+  --nf-text-color: #cd7765;
+  --nf-text-border: #210a0d;
   
 }

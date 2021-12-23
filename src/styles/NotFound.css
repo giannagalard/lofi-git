@@ -10,7 +10,7 @@
 .error {
   width: 69%;
   border-radius: 5px;
-  border: 6px solid #905aa2;
+  border: 6px solid var(--gif-border);
 }
 
 /* Set Cute Font :-) */
@@ -38,8 +38,8 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-align: center;
-  color: #cd7765;
-  -webkit-text-stroke: 3px #210a0d;
+  color: var(--nf-text-color);
+  -webkit-text-stroke: 3px var(--nf-text-border);
 }
 
 .nfSubHeader {
@@ -52,8 +52,8 @@
   text-transform: uppercase;
   text-align: center;
 
-  color: #cd7765;
-  -webkit-text-stroke: 3px #210a0d;
+  color: var(--nf-text-color);
+  -webkit-text-stroke: 3px var(--nf-text-border);
 }
 
 .nfMicroSubHeader {
@@ -66,23 +66,29 @@
   text-transform: uppercase;
   text-align: center;
 
-  color: #210a0d;
+  color: var(--nf-text-border);
 }
 
 .backButton {
   font-family: CherryBomb;
   font-size: 16px;
-  background-color: #78414a;
+  background-color: var(--button-background);
   border: none;
-  color: #cd7765;
+  color: var(--nf-text-color);
   padding: 9px 20px;
   text-align: center;
   text-decoration: none;
   display: flex;
   justify-content: center;
   width: 10%;
-  box-shadow: 0 9px #3b2025;
+  box-shadow: 0 9px var(--button-shadow);
   border-radius: 7px;
+}
+
+.backButton:hover {
+  background-color: var(--button-background);
+  box-shadow: 0 5px var(--button-pressed);
+  transform: translateY(3px);
 }
 
 .nfButtonContainer {

@@ -79,20 +79,20 @@ html {
 .loginButton {
   font-family: CherryBomb;
   font-size: 16px;
-  background-color: var(--login-button-background);
+  background-color: var(--button-background);
   border: none;
   color: var(--home-text-color);
   padding: 11px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  box-shadow: 0 9px var(--login-button-shadow);
+  box-shadow: 0 9px var(--button-shadow);
   border-radius: 7px;
 }
 
-.loginButton:active {
-  background-color: var(--login-button-background);
-  box-shadow: 0 5px var(--login-button-pressed);
+.loginButton:hover {
+  background-color: var(--button-background);
+  box-shadow: 0 5px var(--button-pressed);
   transform: translateY(3px);
 }
 
