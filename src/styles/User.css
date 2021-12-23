@@ -1,4 +1,4 @@
-.bg-image {
+.bg-blur {
   background-image: url("../images/sailormoon.jpg");
   background-size: contain;
   background-position: center;
@@ -9,6 +9,7 @@
   -webkit-filter: blur(8px);
   position: fixed;
   z-index: -1;
+  background-color: #ccaeb2;
 }
 .statsContainer {
   display: flex;
@@ -20,4 +21,39 @@
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(2px);
   padding: 20px;
+}
+
+@font-face {
+  font-family: CherryBomb;
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/CherryBomb.ttf);
+}
+
+.usernameText {
+  font-family: CherryBomb;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 43px;
+}
+
+.lofiText {
+  font-family: CherryBomb;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.mainContainer {
+  padding: 17px;
+}
+
+.bioText {
+  font-family: CherryBomb;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
 }
