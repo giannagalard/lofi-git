@@ -7,6 +7,7 @@ import "../styles/User.css";
 import { Box } from "@mui/system";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import BusinessIcon from "@mui/icons-material/Business";
+import TwitterIcon from '@mui/icons-material/Twitter';
 import Loading from "../components/Loading";
 import UserNotFound from "../components/UserNotFound";
 
@@ -103,6 +104,14 @@ export default function User() {
                         ) : undefined}
                       </Grid>
                     )}
+                    {user.twitter_username === null ? undefined : (
+                      <Grid className="twitter" item xs={12} md={7}>
+                        <p className="upperText">
+                          <TwitterIcon />
+                          @{user.twitter_username}
+                        </p>
+                      </Grid>
+                    )}
                   </Grid>
                 </Grid>
               </Grid>
@@ -123,18 +132,6 @@ export default function User() {
                   <Grid className="card" item xs={12} md={3}>
                     <p className="statsText">{user.public_repos} Repos</p>
                   </Grid>
-
-                  {user.twitter_username === null ? undefined : (
-                    <Grid className="card" item xs={12} md={3}>
-                      <Typography
-                        className="statsText"
-                        noWrap={false}
-                        variant="h5"
-                      >
-                        @{user.twitter_username}
-                      </Typography>
-                    </Grid>
-                  )}
                 </Grid>
               </Box>
 
@@ -150,7 +147,11 @@ export default function User() {
                   />
                 </Grid>
                 {/* SHARE STATS */}
-                <Grid container></Grid>
+                <Grid container>
+                  <Grid item xs={12} md={3} marginTop={"30px"}>
+                    <h3 className="shareText">Share Stats !</h3>
+                  </Grid>
+                </Grid>
               </Grid>
             </div>
           ) : (

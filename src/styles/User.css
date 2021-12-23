@@ -101,4 +101,20 @@
 
 .location {
   font-size: 20px !important;
+  font-family: Cherry Bomb;
+}
+
+.twitter{
+  font-size: 20px !important;
+}
+
+.shareText {
+  font-family: CherryBomb;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 43px;
+  margin: 0;
+  color: var(--user-username-text-color);
+  text-align: center;
+  -webkit-text-stroke: 3px var(--user-username-text-border);
 }
