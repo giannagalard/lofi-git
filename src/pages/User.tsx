@@ -6,7 +6,9 @@ import GitHubCalendar from "react-github-calendar";
 import "../styles/User.css";
 import { Box } from "@mui/system";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import BusinessIcon from '@mui/icons-material/Business';
+import BusinessIcon from "@mui/icons-material/Business";
+import Loading from "../components/Loading";
+import UserNotFound from "../components/UserNotFound";
 
 export default function User() {
   const colourTheme = {
@@ -21,9 +23,15 @@ export default function User() {
 
   const { username } = useParams();
   const [valid, setValid] = useState(false);
+  const [isLoading, setLoading] = useState(true);
   const [user, setUser] = useState<any>({});
   useEffect(() => {
-    fetchData(username as string, setUser as Function, setValid as Function);
+    fetchData(
+      username as string,
+      setUser as Function,
+      setValid as Function,
+      setLoading as Function
+    );
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
@@ -31,9 +39,9 @@ export default function User() {
       <div className="bg-blur"></div>
       <div className="mainContainer">
         <div className="container">
-          {valid === false ? (
-            <h1>Invalid User</h1>
-          ) : (
+          {isLoading === true ? (
+            <Loading />
+          ) : valid === true ? (
             <div>
               <Grid container>
                 {/* USERNAME */}
@@ -80,21 +88,16 @@ export default function User() {
                         marginTop: "30px",
                       }}
                     ></Box>
-                    <p className="bioText">
-                      {user.bio}
-                    </p>
+                    <p className="bioText">{user.bio}</p>
                     {user.location === null ? undefined : (
                       <Grid className="location" item xs={12}>
-                        <h6 className="upperText"
-                        >
-                          <LocationOnIcon/>
+                        <h6 className="upperText">
+                          <LocationOnIcon />
                           {user.location}
                         </h6>
                         {user.company !== null ? (
-                          <h6
-                            className="upperText"
-                          >
-                            <BusinessIcon/>
+                          <h6 className="upperText">
+                            <BusinessIcon />
                             {user.company}
                           </h6>
                         ) : undefined}
@@ -168,6 +171,8 @@ export default function User() {
                 <Grid container></Grid>
               </Grid>
             </div>
+          ) : (
+            <UserNotFound />
           )}
         </div>
       </div>
