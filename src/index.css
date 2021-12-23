@@ -1,14 +1,14 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -17,9 +17,9 @@ code {
   --phone-bg-color: #ccaeb2;
   --home-text-color: #fad5bb;
   --home-text-border: #78414a;
-  
-  --button-background:#78414a;
-  --button-shadow:#3b2025;
+
+  --button-background: #78414a;
+  --button-shadow: #3b2025;
   --button-pressed: #572f36;
 
   --gif-border: #905aa2;
@@ -30,5 +30,4 @@ code {
   --user-upper-text-color: #442533;
   --user-username-text-color: #ca8497;
   --user-username-text-border: #442533;
-  
 }

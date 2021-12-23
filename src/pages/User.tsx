@@ -7,7 +7,7 @@ import "../styles/User.css";
 import { Box } from "@mui/system";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import BusinessIcon from "@mui/icons-material/Business";
-import TwitterIcon from '@mui/icons-material/Twitter';
+import TwitterIcon from "@mui/icons-material/Twitter";
 import Loading from "../components/Loading";
 import UserNotFound from "../components/UserNotFound";
 
@@ -38,9 +38,7 @@ export default function User() {
   return (
     <>
       <div className="bg-blur"></div>
-      <Box 
-      className="mainContainer"
-      >
+      <Box className="mainContainer">
         <div className="container">
           {isLoading === true ? (
             <Loading />
@@ -109,8 +107,7 @@ export default function User() {
                     {user.twitter_username === null ? undefined : (
                       <Grid className="twitter" item xs={12} md={7}>
                         <p className="upperText">
-                          <TwitterIcon />
-                          @{user.twitter_username}
+                          <TwitterIcon />@{user.twitter_username}
                         </p>
                       </Grid>
                     )}

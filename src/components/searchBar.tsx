@@ -7,7 +7,9 @@ export default function SearchBar() {
   let navigate = useNavigate();
   const [search, setSearch] = useState("");
   const clickyBlicky = (e: any) => {
-    if (e.key === "Enter"){navigate (`/user/${search}`)}
+    if (e.key === "Enter") {
+      navigate(`/user/${search}`);
+    }
   };
   return (
     <div className="searchContainer">
@@ -17,9 +19,9 @@ export default function SearchBar() {
         className="searchBar"
         type="search"
         placeholder="Search for a user"
-        onKeyPress = {(e) => clickyBlicky(e)}
-      /> 
-      <Link to={{ pathname: `/user/${search}` }} className="searchButton " >
+        onKeyPress={(e) => clickyBlicky(e)}
+      />
+      <Link to={{ pathname: `/user/${search}` }} className="searchButton ">
         {" "}
         Submit{" "}
       </Link>
