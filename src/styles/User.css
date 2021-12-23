@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&family=Arvo&family=Oswald:wght@300&family=Patrick+Hand&display=swap");
 
+/* define variables */
+
 .bg-blur {
   background-image: url("../images/sailormoon.jpg");
   background-size: contain;

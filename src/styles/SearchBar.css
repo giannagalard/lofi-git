@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Arvo&family=Oswald:wght@300&family=Patrick+Hand&display=swap');
 /* Build Search Bar */
 
+/* define variables */
+
+
 /* Search Bar Container */
 .searchContainer { 
     display: inline-flex;
