@@ -28,12 +28,18 @@ export default function User() {
       ) : (
         <div>
           <Grid container>
-            <Grid item xs={12} md={3}>
+            {/* USERNAME */}
+            <Grid item xs={12} md={12}>
               <Typography className="mainText" noWrap={false} variant="h3">
-                {user.login}'s Lofi Stats
+                {user.login}'s
+              </Typography>
+              {/* SUB HEADER */}
+              <Typography className="mainText" noWrap={false} variant="h3">
+                Lofi Stats 
               </Typography>
             </Grid>
             <Grid item xs={12} md={12}></Grid>
+            {/* AVATAR */}
             <Grid item xs={12} md={2}>
               <Avatar
                 sx={{ width: 150, height: 150 }}
@@ -51,11 +57,13 @@ export default function User() {
               xs={12}
               md={4}
             >
+              {/* BIO */}
               <Typography noWrap={false} variant="body1">
                 {user.bio}
               </Typography>
             </Grid>
           </Grid>
+          {/* USER STATS */}
           <Grid container>
             {user.followers === null ? undefined : (
               <Grid item xs={12} md={3}>
@@ -89,6 +97,7 @@ export default function User() {
               </Typography></Grid>
             )}
           </Grid>
+          {/* GITHUB ACTIVITY */}
           <Grid container>
             <Grid item xs={12}>
               <GitHubCalendar
@@ -99,6 +108,8 @@ export default function User() {
                 fontSize={16}
               />
             </Grid>
+            {/* SHARE STATS */}
+            <Grid container></Grid>
           </Grid>
         </div>
       )}
