@@ -13,6 +13,14 @@
   z-index: -1;
   background-color: #ccaeb2;
 }
+
+.upperText {
+  font-family: "Patrick Hand", cursive;
+  font-size: 33px;
+  color: #442533;
+  margin: 0;
+}
+
 .statsContainer {
   display: flex;
   justify-content: center;
@@ -43,7 +51,9 @@
   font-style: normal;
   font-weight: normal;
   font-size: 43px;
+  margin: 0;
   color: #ca8497;
+  text-align: center;
   -webkit-text-stroke: 3px #604450;
 }
 
@@ -52,6 +62,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
+  margin: 0;
   display: flex;
   justify-content: center;
   color: #ca8497;
@@ -75,13 +86,17 @@
   font-family: "Patrick Hand", cursive;
   font-size: 43px;
   color: #442533;
+  margin: 0;
 }
 
 .activitySquares {
   display: flex;
   justify-content: center;
-  position: center;
+  background-color: rgba(255, 255, 255, 0.4);
   align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  padding: 20px;
 }
 
 .location {

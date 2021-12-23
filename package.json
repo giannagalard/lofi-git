@@ -6,6 +6,7 @@
     "@emotion/react": "^11.7.1",
     "@emotion/style": "^0.8.0",
     "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.2.5",
     "@mui/material": "^5.2.5",
     "@octokit/core": "^3.5.1",
     "@testing-library/jest-dom": "^5.16.1",

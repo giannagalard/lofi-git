@@ -4,26 +4,21 @@ import NotFound from "./pages/NotFound";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import CherryBomb from "./fonts/CherryBomb.ttf";
 
-
 function App() {
+
   return (
-
-    
-
-    <div className="App">
-      <header className="App-header">
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/user/:username" element={<User />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </header>
-
-      
-    </div>
+      <div className="App">
+        <header className="App-header">
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/home" element={<Home />} />
+              <Route path="/user/:username" element={<User />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </BrowserRouter>
+        </header>
+      </div>
   );
 }
 
