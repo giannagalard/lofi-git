@@ -4,10 +4,11 @@ import { fetchData } from '../api/github';
 
 export default function User() {
     const { username } = useParams()
-    const [valid, setValid] = useState({})
+    const [valid, setValid] = useState(false)
     const [user, setUser] = useState<any>({})
     useEffect(() => {
-        setValid(fetchData(username as string, setUser))
+        fetchData(username as string, setUser as Function, setValid as Function)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
       }, []);
     return (
         <div>
