@@ -115,31 +115,13 @@ export default function User() {
               >
                 <Grid className="statsContainer" container>
                   <Grid className="card" item xs={12} md={3}>
-                    <Typography
-                      className="statsText"
-                      noWrap={false}
-                      variant="h5"
-                    >
-                      {user.followers} Followers
-                    </Typography>
+                    <p className="statsText">{user.followers} Followers</p>
                   </Grid>
                   <Grid className="card" item xs={12} md={3}>
-                    <Typography
-                      className="statsText"
-                      noWrap={false}
-                      variant="h5"
-                    >
-                      {user.following} Following
-                    </Typography>
+                    <p className="statsText">{user.following} Following</p>
                   </Grid>
                   <Grid className="card" item xs={12} md={3}>
-                    <Typography
-                      className="statsText"
-                      noWrap={false}
-                      variant="h5"
-                    >
-                      {user.public_repos} Repos
-                    </Typography>
+                    <p className="statsText">{user.public_repos} Repos</p>
                   </Grid>
 
                   {user.twitter_username === null ? undefined : (

@@ -8,10 +8,10 @@ export const fetchData = async (user: string, setUser: Function, setValid: Funct
       })
       setUser(response.data)
       setValid(true)
-      setTimeout(() => setLoading(false), 500)
+      setTimeout(() => setLoading(false), 1069)
     }
     catch(e) {
       setValid(false)
-      setTimeout(() => setLoading(false), 500)
+      setTimeout(() => setLoading(false), 420) 
     }
 };
