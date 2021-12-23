@@ -54,6 +54,7 @@
   justify-content: center;
   color: #CA8497;
   -webkit-text-stroke: 3px #604450;
+  text-align: center;
 }
 
 .mainContainer {
@@ -73,3 +74,11 @@
   font-size: 43px;
   color: #442533;
 }
+
+.activitySquares {
+  display: flex;
+  justify-content: center;
+  position: center;
+  align-items: center;
+}
+

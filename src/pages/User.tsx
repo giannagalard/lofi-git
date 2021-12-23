@@ -43,6 +43,7 @@ export default function User() {
     level1: "#c084f5",
     level0: "#ecd9fc",
   };
+
   const { username } = useParams();
   const [valid, setValid] = useState(false);
   const [user, setUser] = useState<any>({});
@@ -62,7 +63,7 @@ export default function User() {
               <Grid container>
                 {/* USERNAME */}
                 <ThemeProvider theme={fontTheme}>
-                  <Grid item xs={12} md={12}>
+                  <Grid item xs={12} md={12} >
                     <Typography
                       className="usernameText"
                       noWrap={false}
@@ -157,10 +158,10 @@ export default function User() {
               </Box>
 
               {/* GITHUB ACTIVITY */}
-              <Grid container>
-                <Grid item xs={12}>
+              <Grid container className="activitySquares" >
+                <Grid item xs={12} m={12}>
                   <GitHubCalendar
-                    username="giannagalard"
+                    username={user.login}
                     blockSize={15}
                     blockMargin={5}
                     theme={colourTheme}
