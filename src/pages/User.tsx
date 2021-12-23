@@ -164,6 +164,19 @@ export default function User() {
                   <Grid item xs={12} md={3} marginTop={"30px"}>
                     <h3 className="shareText">Share Stats !</h3>
                   </Grid>
+                  {/* share to twitter */}
+                  <Grid item xs={12} md={3}>
+                    <a
+                      href={`https://twitter.com/intent/tweet?text=Check%20out%20my%20fun%20Github%20stats%20for%20${user.login}%20https://github.com/${user.login}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://img.icons8.com/color/48/000000/twitter.png"
+                        alt="twitter"
+                      />
+                    </a>
+                    </Grid>
                 </Grid>
               </Grid>
             </div>

@@ -25,6 +25,7 @@ export const Footer: React.FC<prop> = (props) => {
         >
           Gianna Galard
         </a>
+        {" "} :-)
       </p>
     </footer>
   );
