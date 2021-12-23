@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Arvo&family=Oswald:wght@300&family=Patrick+Hand&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Arvo&family=Oswald:wght@300&family=Patrick+Hand&display=swap");
 
 .bg-blur {
   background-image: url("../images/sailormoon.jpg");
@@ -18,12 +17,15 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(2px);
+  background-color: rgba(255, 255, 255, 0.4);
   padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 @font-face {
@@ -34,14 +36,14 @@
 }
 
 @font-family {
-  font-family: 'Patrick Hand', cursive;
+  font-family: "Patrick Hand", cursive;
 }
 .usernameText {
   font-family: CherryBomb;
   font-style: normal;
   font-weight: normal;
   font-size: 43px;
-  color: #CA8497;
+  color: #ca8497;
   -webkit-text-stroke: 3px #604450;
 }
 
@@ -52,7 +54,7 @@
   font-size: 30px;
   display: flex;
   justify-content: center;
-  color: #CA8497;
+  color: #ca8497;
   -webkit-text-stroke: 3px #604450;
   text-align: center;
 }
@@ -70,7 +72,7 @@
 }
 
 .statsText {
-  font-family: 'Patrick Hand', cursive;
+  font-family: "Patrick Hand", cursive;
   font-size: 43px;
   color: #442533;
 }
@@ -82,3 +84,6 @@
   align-items: center;
 }
 
+.location {
+  font-size: 20px !important;
+}

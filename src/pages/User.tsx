@@ -4,7 +4,7 @@ import { fetchData } from "../api/github";
 import { Grid, Typography, Avatar } from "@mui/material";
 import GitHubCalendar from "react-github-calendar";
 import "../styles/User.css";
-import { createTheme, Box, fontStyle } from "@mui/system";
+import { createTheme, Box } from "@mui/system";
 import { ThemeProvider } from "@emotion/react";
 
 export default function User() {
@@ -63,7 +63,7 @@ export default function User() {
               <Grid container>
                 {/* USERNAME */}
                 <ThemeProvider theme={fontTheme}>
-                  <Grid item xs={12} md={12} >
+                  <Grid item xs={12} md={12}>
                     <Typography
                       className="usernameText"
                       noWrap={false}
@@ -84,11 +84,16 @@ export default function User() {
                   </Grid>
                 </ThemeProvider>
                 <Grid item xs={12} md={12}></Grid>
-
+                <Grid style={{ marginTop: "20px" }}></Grid>
                 {/* AVATAR */}
                 <Grid item xs={12} md={2} margin={"top"}>
                   <Avatar
-                    sx={{ width: 150, height: 150, margin: "auto" }}
+                    sx={{
+                      width: 150,
+                      height: 150,
+                      margin: "auto",
+                      border: "5px solid #604450",
+                    }}
                     src={user.avatar_url}
                   ></Avatar>
                 </Grid>
@@ -106,60 +111,91 @@ export default function User() {
                   {/* BIO */}
                   <Grid className="bioText">
                     <ThemeProvider theme={fontTheme}>
+                      <Box
+                        sx={{
+                          display: { xs: "block", md: "none" },
+                          marginTop: "30px",
+                        }}
+                      ></Box>
                       <Typography noWrap={false} variant="body1">
                         {user.bio}
                       </Typography>
+                      {user.location === null ? undefined : (
+                        <Grid className="location" item xs={12} md={6}>
+                          <Typography
+                            className="statsText"
+                            noWrap={false}
+                            variant="body1"
+                          >
+                            {user.location}
+                          </Typography>
+                        </Grid>
+                      )}
                     </ThemeProvider>
                   </Grid>
                 </Grid>
               </Grid>
 
               {/* USER STATS */}
-              <Box className="userStats" margin={"15px"}>
-              <ThemeProvider theme={statsTheme}> 
-                <Grid className="statsContainer" container>
-                  {user.followers === null ? undefined : (
-                    <Grid className="card" item xs={12} md={3}>
-                      <Typography className="statsText" noWrap={false} variant="h5">
-                        {user.followers} Followers
-                      </Typography>
-                    </Grid>
-                  )}
-                  {user.following === 0 ? undefined : (
-                    <Grid className="card" item xs={12} md={3}>
-                      <Typography className="statsText" noWrap={false} variant="h5">
-                        {user.following} Following
-                      </Typography>
-                    </Grid>
-                  )}
-                  {user.following === 0 ? undefined : (
-                    <Grid className="card" item xs={12} md={3}>
-                      <Typography className="statsText" noWrap={false} variant="h5">
-                        {user.public_repos} Repos
-                      </Typography>
-                    </Grid>
-                  )}
-                  {user.location === null ? undefined : (
-                    <Grid className="card" item xs={12} md={3}>
-                      <Typography className="statsText" noWrap={false} variant="h5">
-                        {user.location}
-                      </Typography>
-                    </Grid>
-                  )}
-                  {user.twitter_username === null ? undefined : (
-                    <Grid className="card" item xs={12} md={3}>
-                      <Typography className="statsText" noWrap={false} variant="h5">
-                        @{user.twitter_username}
-                      </Typography>
-                    </Grid>
-                  )}
-                </Grid>
-              </ThemeProvider>
+              <Box
+                className="userStats"
+                style={{ marginTop: "30px" }}
+                margin={"15px"}
+              >
+                <ThemeProvider theme={statsTheme}>
+                  <Grid className="statsContainer" container>
+                    {user.followers === null ? undefined : (
+                      <Grid className="card" item xs={12} md={3}>
+                        <Typography
+                          className="statsText"
+                          noWrap={false}
+                          variant="h5"
+                        >
+                          {user.followers} Followers
+                        </Typography>
+                      </Grid>
+                    )}
+                    {user.following === 0 ? undefined : (
+                      <Grid className="card" item xs={12} md={3}>
+                        <Typography
+                          className="statsText"
+                          noWrap={false}
+                          variant="h5"
+                        >
+                          {user.following} Following
+                        </Typography>
+                      </Grid>
+                    )}
+                    {user.following === 0 ? undefined : (
+                      <Grid className="card" item xs={12} md={3}>
+                        <Typography
+                          className="statsText"
+                          noWrap={false}
+                          variant="h5"
+                        >
+                          {user.public_repos} Repos
+                        </Typography>
+                      </Grid>
+                    )}
+
+                    {user.twitter_username === null ? undefined : (
+                      <Grid className="card" item xs={12} md={3}>
+                        <Typography
+                          className="statsText"
+                          noWrap={false}
+                          variant="h5"
+                        >
+                          @{user.twitter_username}
+                        </Typography>
+                      </Grid>
+                    )}
+                  </Grid>
+                </ThemeProvider>
               </Box>
 
               {/* GITHUB ACTIVITY */}
-              <Grid container className="activitySquares" >
-                <Grid item xs={12} m={12}>
+              <Grid container>
+                <Grid className="activitySquares" item xs={12} m={12}>
                   <GitHubCalendar
                     username={user.login}
                     blockSize={15}
