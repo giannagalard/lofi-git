@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchData } from "../api/github";
-import { Grid, Typography, Avatar } from "@mui/material";
+import { Grid, Avatar } from "@mui/material";
 import GitHubCalendar from "react-github-calendar";
 import "../styles/User.css";
 import { Box } from "@mui/system";
@@ -9,7 +9,6 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import BusinessIcon from "@mui/icons-material/Business";
 import TwitterIcon from '@mui/icons-material/Twitter';
 import Loading from "../components/Loading";
-import DownloadIcon from '@mui/icons-material/Download';
 import UserNotFound from "../components/UserNotFound";
 
 export default function User() {
