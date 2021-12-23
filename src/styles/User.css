@@ -72,6 +72,8 @@
 
 .mainContainer {
   padding: 17px;
+  position: relative;
+  min-height: 100vh;
 }
 
 .bioText {

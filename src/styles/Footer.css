@@ -1,0 +1,38 @@
+@font-face {
+  font-family: CherryBomb;
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/CherryBomb.ttf);
+}
+
+.footerUser {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 3.5rem;
+  text-align: center;
+}
+
+#footer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  width: 100vw;
+  height: 3.5rem;
+  text-align: center;
+  background-color: var(--user-username-text-color);
+}
+
+.footerText {
+  text-align: center;
+  font-family: CherryBomb;
+  color: var(--home-text-border);
+}
+
+#footer a {
+  color: var(--nf-text-border);
+}
