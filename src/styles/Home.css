@@ -2,10 +2,6 @@ html {
   overflow-x: hidden;
 }
 
-
-/* define variables */
-
-
 /* Set Background Image 100vh */
 .bg-image {
   background-image: url("../images/sailormoon.jpg");
@@ -17,7 +13,7 @@ html {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  background-color: #d3b4c4;
+  background-color: var(--home-bg-color);
   flex-direction: column;
 }
 
@@ -32,7 +28,7 @@ html {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #ccaeb2;
+  background-color: var(--phone-bg-color);
 }
 
 /* Set Cute Font :-) */
@@ -61,8 +57,8 @@ html {
   text-transform: uppercase;
   text-align: center;
 
-  color: #fad5bb;
-  -webkit-text-stroke: 3px #78414a;
+  color: var(--home-text-color);
+  -webkit-text-stroke: 3px var(--home-text-border);
 }
 
 .orText {
@@ -75,28 +71,28 @@ html {
   text-transform: uppercase;
   margin-left: 6px;
 
-  color: #fad5bb;
-  -webkit-text-stroke: 3px #78414a;
+  color: var(--home-text-color);
+  -webkit-text-stroke: 3px var(--home-text-border);
 }
 
 /* Login Button */
 .loginButton {
   font-family: CherryBomb;
   font-size: 16px;
-  background-color: #78414a;
+  background-color: var(--login-button-background);
   border: none;
-  color: #fad5bb;
+  color: var(--home-text-color);
   padding: 11px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  box-shadow: 0 9px #3b2025;
+  box-shadow: 0 9px var(--login-button-shadow);
   border-radius: 7px;
 }
 
 .loginButton:active {
-  background-color: #78414a;
-  box-shadow: 0 5px #572f36;
+  background-color: var(--login-button-background);
+  box-shadow: 0 5px var(--login-button-pressed);
   transform: translateY(3px);
 }
 
