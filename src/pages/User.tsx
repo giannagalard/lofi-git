@@ -10,6 +10,7 @@ import BusinessIcon from "@mui/icons-material/Business";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import Loading from "../components/Loading";
 import UserNotFound from "../components/UserNotFound";
+import { Link } from "react-router-dom";
 
 export default function User() {
   const colourTheme = {
@@ -145,7 +146,20 @@ export default function User() {
                     fontSize={16}
                   />
                 </Grid>
-                {/* SHARE STATS */}
+
+                {/* BACK BUTTON */}
+                <Grid
+                  className="backButtonContainer"
+                  item
+                  xs={12}
+                  md={12}
+                  marginTop={"30px"}
+                >
+                  <Link className="backButton" to="/home">
+                    Back
+                  </Link>
+                  {/* SHARE STATS */}
+                </Grid>
                 <Grid container>
                   <Grid item xs={12} md={3} marginTop={"30px"}>
                     <h3 className="shareText">Share Stats !</h3>

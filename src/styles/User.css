@@ -108,6 +108,31 @@
   font-size: 20px !important;
 }
 
+.backButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.backButton {
+  font-family: CherryBomb;
+  font-size: 16px;
+  background-color: var(--button-background);
+  border: none;
+  color: var(--nf-text-color);
+  padding: 9px 20px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 9px var(--button-shadow);
+  border-radius: 7px;
+}
+
+.backButton:hover {
+  background-color: var(--button-background);
+  box-shadow: 0 5px var(--button-pressed);
+  transform: translateY(3px);
+}
+
 .shareText {
   font-family: CherryBomb;
   font-style: normal;
