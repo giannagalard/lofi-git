@@ -1,0 +1,49 @@
+body{
+    background:#f2cbbc; 
+   }
+   
+   .bunny{
+   font-size:7px; /*> size */ 
+   position : absolute;
+   left     : 50%;
+   top      : 50%;
+   width    : 16em;
+   height   : 20em;
+   margin   : -10em 0 0 -8em;
+   }
+   
+   .bunny::before,
+   .bunny::after{
+   content : '';
+   display : block;
+   width   : 1em;
+   height  : 1em;
+   margin  : -1em 0 0 -1em;
+   }
+   
+   .bunny::before{/*animation*/ 
+   animation: animate .5s steps(1) infinite;
+   -webkit-animation: animate .5s steps(1) infinite;
+   }
+   
+   .bunny::after{ /*actual static bunny*/ 
+   box-shadow:5em 1em #000000,6em 1em #000000,7em 1em #000000,8em 1em #000000,13em 1em #000000,14em 1em #000000,15em 1em #000000,16em 1em #000000,4em 2em #000000,5em 2em #000000,6em 2em #a96719,7em 2em #a96719,8em 2em #000000,11em 2em #000000,12em 2em #000000,13em 2em #000000,14em 2em #a96719,15em 2em #a96719,16em 2em #000000,4em 3em #000000,5em 3em #000000,6em 3em #000000,7em 3em #000000,8em 3em #000000,9em 3em #000000,10em 3em #000000,11em 3em #000000,12em 3em #f3b35e,13em 3em #e69f47,14em 3em #e69f47,15em 3em #a96719,16em 3em #000000,3em 4em #000000,4em 4em #000000,5em 4em #000000,6em 4em #f3b35e,7em 4em #f3b35e,8em 4em #f3b35e,9em 4em #f3b35e,10em 4em #f3b35e,11em 4em #f3b35e,12em 4em #f3b35e,13em 4em #f3b35e,14em 4em #e69f47,15em 4em #000000,16em 4em #000000,2em 5em #000000,3em 5em #000000,4em 5em #f3b35e,5em 5em #f3b35e,6em 5em #f3b35e,7em 5em #f3b35e,8em 5em #f3b35e,9em 5em #f3b35e,10em 5em #f3b35e,11em 5em #f3b35e,12em 5em #f3b35e,13em 5em #000000,14em 5em #000000,15em 5em #000000,2em 6em #000000,3em 6em #f3b35e,4em 6em #f3b35e,5em 6em #f3b35e,6em 6em #f3b35e,7em 6em #f3b35e,8em 6em #f3b35e,9em 6em #f3b35e,10em 6em #f3b35e,11em 6em #f3b35e,12em 6em #f3b35e,13em 6em #f3b35e,14em 6em #000000,15em 6em #000000,2em 7em #000000,3em 7em #ffdb9a,4em 7em #f3b35e,5em 7em #f3b35e,6em 7em #e69f47,7em 7em #e69f47,8em 7em #e69f47,9em 7em #e69f47,10em 7em #f3b35e,11em 7em #f3b35e,12em 7em #f3b35e,13em 7em #ffdb9a,14em 7em #ffdb9a,15em 7em #000000,1em 8em #000000,2em 8em #000000,3em 8em #ffdb9a,6em 8em #e69f47,7em 8em #a96719,8em 8em #a96719,9em 8em #e69f47,10em 8em #f3b35e,13em 8em #ffdb9a,14em 8em #ffdb9a,15em 8em #000000,1em 9em #000000,2em 9em #ffdb9a,3em 9em #ffdb9a,6em 9em #ffdb9a,7em 9em #000000,8em 9em #000000,9em 9em #e69f47,10em 9em #ffdb9a,13em 9em #ffdb9a,14em 9em #ffdb9a,15em 9em #000000,16em 9em #000000,1em 10em #000000,2em 10em #ffdb9a,3em 10em #ffdb9a,4em 10em #000000,5em 10em #000000,6em 10em #ffe9ac,7em 10em #ffe9ac,8em 10em #000000,9em 10em #ffe9ac,10em 10em #ffe9ac,11em 10em #000000,12em 10em #000000,13em 10em #ffe9ac,14em 10em #ffdb9a,15em 10em #ffdb9a,16em 10em #000000,1em 11em #000000,2em 11em #ffdb9a,3em 11em #ffe9ac,4em 11em #ffe9ac,5em 11em #ffe9ac,6em 11em #ffe9ac,8em 11em #000000,10em 11em #ffe9ac,11em 11em #ffe9ac,12em 11em #ffe9ac,13em 11em #ffe9ac,14em 11em #ffe9ac,15em 11em #ffdb9a,16em 11em #000000,1em 12em #000000,2em 12em #000000,3em 12em #ffdb9a,4em 12em #ffe9ac,5em 12em #ffe9ac,6em 12em #ffe9ac,10em 12em #ffe9ac,11em 12em #ffe9ac,12em 12em #ffe9ac,13em 12em #ffe9ac,14em 12em #ffdb9a,15em 12em #000000,16em 12em #000000,2em 13em #000000,3em 13em #000000,4em 13em #000000,5em 13em #ffdb9a,6em 13em #ffe9ac,7em 13em #ffe9ac,8em 13em #ffe9ac,9em 13em #ffe9ac,10em 13em #ffe9ac,11em 13em #ffe9ac,12em 13em #ffdb9a,13em 13em #ffdb9a,14em 13em #000000,15em 13em #000000,3em 14em #000000,4em 14em #f3b35e,5em 14em #ffdb9a,6em 14em #ffe9ac,7em 14em #ffe9ac,8em 14em #ffe9ac,9em 14em #ffe9ac,10em 14em #ffe9ac,11em 14em #ffdb9a,12em 14em #f3b35e,13em 14em #f3b35e,14em 14em #f3b35e,15em 14em #000000,3em 15em #000000,4em 15em #f3b35e,5em 15em #ffdb9a,6em 15em #ffdb9a,7em 15em #ffe9ac,8em 15em #ffe9ac,9em 15em #ffe9ac,10em 15em #ffe9ac,11em 15em #ffdb9a,12em 15em #f3b35e,13em 15em #f3b35e,14em 15em #f3b35e,15em 15em #000000,16em 15em #000000,2em 16em #000000,3em 16em #000000,4em 16em #000000,5em 16em #f3b35e,6em 16em #ffdb9a,7em 16em #ffe9ac,8em 16em #ffe9ac,9em 16em #ffe9ac,10em 16em #ffdb9a,11em 16em #f3b35e,12em 16em #f3b35e,13em 16em #f3b35e,14em 16em #f3b35e,15em 16em #f3b35e,16em 16em #000000,2em 17em #000000,3em 17em #f3b35e,4em 17em #000000,5em 17em #000000,6em 17em #f3b35e,7em 17em #ffdb9a,8em 17em #ffe9ac,9em 17em #ffdb9a,10em 17em #f3b35e,11em 17em #f3b35e,12em 17em #000000,13em 17em #ffdb9a,14em 17em #f3b35e,15em 17em #f3b35e,16em 17em #000000,2em 18em #000000,3em 18em #f3b35e,4em 18em #ffdb9a,5em 18em #000000,6em 18em #e69f47,7em 18em #e69f47,8em 18em #000000,9em 18em #e69f47,10em 18em #000000,11em 18em #000000,12em 18em #ffdb9a,13em 18em #f3b35e,14em 18em #f3b35e,15em 18em #f3b35e,16em 18em #000000,2em 19em #000000,3em 19em #000000,4em 19em #e69f47,5em 19em #000000,6em 19em #000000,7em 19em #a96719,8em 19em #000000,9em 19em #a96719,10em 19em #000000,11em 19em #ffdb9a,12em 19em #e69f47,13em 19em #e69f47,14em 19em #e69f47,15em 19em #000000,16em 19em #000000,3em 20em #000000,4em 20em #000000,5em 20em #000000,6em 20em #000000,7em 20em #000000,8em 20em #000000,9em 20em #000000,10em 20em #000000,11em 20em #000000,12em 20em #000000,13em 20em #000000,14em 20em #000000,15em 20em #000000;
+   }
+   
+   
+   @-webkit-keyframes animate {
+   0%, 100% {box-shadow:4em 8em #000000,5em 8em #000000,11em 8em #000000,12em 8em #000000,4em 9em #000000,5em 9em #000000,11em 9em #000000,12em 9em #000000,7em 11em #000000,9em 11em #000000,7em 12em #ffe9ac,8em 12em #ffe9ac,9em 12em #ffe9ac}
+   20% {box-shadow:4em 8em #f3b35e,5em 8em #f3b35e,11em 8em #f3b35e,12em 8em #f3b35e,4em 9em #000000,5em 9em #000000,11em 9em #000000,12em 9em #000000,7em 11em #000000,9em 11em #000000,7em 12em #ffe9ac,8em 12em #ffe9ac,9em 12em #ffe9ac}
+   40% {box-shadow:4em 8em #f3b35e,5em 8em #f3b35e,11em 8em #f3b35e,12em 8em #f3b35e,4em 9em #ffdb9a,5em 9em #ffdb9a,11em 9em #ffdb9a,12em 9em #ffdb9a,7em 11em #ffe9ac,9em 11em #ffe9ac,7em 12em #000000,8em 12em #000000,9em 12em #000000}
+   60% {box-shadow:4em 8em #f3b35e,5em 8em #f3b35e,11em 8em #f3b35e,12em 8em #f3b35e,4em 9em #000000,5em 9em #000000,11em 9em #000000,12em 9em #000000,7em 11em #000000,9em 11em #000000,7em 12em #ffe9ac,8em 12em #ffe9ac,9em 12em #ffe9ac}
+   80% {box-shadow:4em 8em #000000,5em 8em #000000,11em 8em #000000,12em 8em #000000,4em 9em #000000,5em 9em #000000,11em 9em #000000,12em 9em #000000,7em 11em #ffe9ac,9em 11em #ffe9ac,7em 12em #000000,8em 12em #000000,9em 12em #000000}
+   }
+   
+   
+   @keyframes animate {
+   0%, 100% {box-shadow:4em 8em #000000,5em 8em #000000,11em 8em #000000,12em 8em #000000,4em 9em #000000,5em 9em #000000,11em 9em #000000,12em 9em #000000,7em 11em #000000,9em 11em #000000,7em 12em #ffe9ac,8em 12em #ffe9ac,9em 12em #ffe9ac}
+   20% {box-shadow:4em 8em #f3b35e,5em 8em #f3b35e,11em 8em #f3b35e,12em 8em #f3b35e,4em 9em #000000,5em 9em #000000,11em 9em #000000,12em 9em #000000,7em 11em #000000,9em 11em #000000,7em 12em #ffe9ac,8em 12em #ffe9ac,9em 12em #ffe9ac}
+   40% {box-shadow:4em 8em #f3b35e,5em 8em #f3b35e,11em 8em #f3b35e,12em 8em #f3b35e,4em 9em #ffdb9a,5em 9em #ffdb9a,11em 9em #ffdb9a,12em 9em #ffdb9a,7em 11em #ffe9ac,9em 11em #ffe9ac,7em 12em #000000,8em 12em #000000,9em 12em #000000}
+   60% {box-shadow:4em 8em #f3b35e,5em 8em #f3b35e,11em 8em #f3b35e,12em 8em #f3b35e,4em 9em #000000,5em 9em #000000,11em 9em #000000,12em 9em #000000,7em 11em #000000,9em 11em #000000,7em 12em #ffe9ac,8em 12em #ffe9ac,9em 12em #ffe9ac}
+   80% {box-shadow:4em 8em #000000,5em 8em #000000,11em 8em #000000,12em 8em #000000,4em 9em #000000,5em 9em #000000,11em 9em #000000,12em 9em #000000,7em 11em #ffe9ac,9em 11em #ffe9ac,7em 12em #000000,8em 12em #000000,9em 12em #000000}
+   }
