@@ -9,15 +9,15 @@
     border-radius: 7px;
     overflow: hidden;
     height: 38px;
-    box-shadow: 0 9px #3b2025;
+    box-shadow: 0 9px var(--button-shadow);
     border-radius: 7px;
 }
 
 /* Search Icon */
 .searchIcon { 
     padding: 0.5rem;
-    background: #78414A;
-    color: #FAD5BB;
+    background: var(--button-background);
+    color: var(--home-text-color);
     display: flex;
     align-items: center;
 }
@@ -27,7 +27,7 @@
     border: 0;
     padding: 0.5rem 0.5rem 0.5rem 0;
     flex: 1;
-    background: #FAD5BB;
+    background: var(--home-text-color);
     padding-left: 5px;
     
     font-family: 'Patrick Hand', cursive;
@@ -35,9 +35,9 @@
 
 /* Search Button */
 .searchButton {
-    background: #78414A;
+    background: var(--button-background);
     border: 0;
-    color: #FAD5BB;
+    color: var(--home-text-color);
     padding: 0.5rem;
     border-radius: 0;
     text-decoration: none;
