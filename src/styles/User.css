@@ -11,13 +11,13 @@
   -webkit-filter: blur(8px);
   position: fixed;
   z-index: -1;
-  background-color: #ccaeb2;
+  background-color: value([--user-bg-color]);
 }
 
 .upperText {
   font-family: "Patrick Hand", cursive;
   font-size: 33px;
-  color: #442533;
+  color: var(--user-upper-text-color);
   margin: 0;
 }
 
@@ -52,9 +52,9 @@
   font-weight: normal;
   font-size: 43px;
   margin: 0;
-  color: #ca8497;
+  color: var(--user-username-text-color);
   text-align: center;
-  -webkit-text-stroke: 3px #604450;
+  -webkit-text-stroke: 3px var(--user-username-text-border);
 }
 
 .lofiText {
@@ -65,8 +65,8 @@
   margin: 0;
   display: flex;
   justify-content: center;
-  color: #ca8497;
-  -webkit-text-stroke: 3px #604450;
+  color: var(--user-username-text-color);
+  -webkit-text-stroke: 3px var(--user-username-text-border);
   text-align: center;
 }
 
@@ -79,13 +79,13 @@
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  color: #442533;
+  color: var(--user-upper-text-color);
 }
 
 .statsText {
   font-family: "Patrick Hand", cursive;
   font-size: 43px;
-  color: #442533;
+  color: var(--user-upper-text-color);
   margin: 0;
 }
 

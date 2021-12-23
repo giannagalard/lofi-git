@@ -25,5 +25,10 @@ code {
   --gif-border: #905aa2;
   --nf-text-color: #cd7765;
   --nf-text-border: #210a0d;
+
+  --user-bg-color: #ccaeb2;
+  --user-upper-text-color: #442533;
+  --user-username-text-color: #ca8497;
+  --user-username-text-border: #442533;
   
 }
