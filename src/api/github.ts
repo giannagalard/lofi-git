@@ -6,6 +6,7 @@ export const fetchData = async (user: string, setUser: Function, setValid: Funct
       .request(`GET /users/${user}`, {
         username: "username",
       })
+      console.log(response)
       setUser(response.data)
       setValid(true)
     }
