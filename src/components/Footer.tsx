@@ -7,7 +7,7 @@ interface prop {
 
 export const Footer: React.FC<prop> = (props) => {
   return (
-    <footer id={props.location === "/home" ? "footer" : "footerUser"}>
+    <footer id={props.location === "/home" || "/" ? "footer" : "footerUser"}>
       <p className="footerText">
         &copy; COPYRIGHT 2021{" "}
         <a
