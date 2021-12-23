@@ -57,20 +57,36 @@ export default function User() {
             </Grid>
           </Grid>
           <Grid container>
-            {user.company === null ? undefined : (
-              <Grid item xs={12} md={3}></Grid>
-            )}
-            {user.followers === 0 ? undefined : (
-              <Grid item xs={12} md={3}></Grid>
+            {user.followers === null ? undefined : (
+              <Grid item xs={12} md={3}>
+              <Typography noWrap={false} variant="h5">
+                {user.followers} Followers
+              </Typography></Grid>
             )}
             {user.following === 0 ? undefined : (
-              <Grid item xs={12} md={3}></Grid>
+              <Grid item xs={12} md={3}>
+              <Typography noWrap={false} variant="h5">
+                {user.following} Following
+              </Typography></Grid>
+            )}
+            {user.following === 0 ? undefined : (
+              <Grid item xs={12} md={3}>
+              <Typography noWrap={false} variant="h5">
+                {user.public_repos} Repos
+                </Typography>
+              </Grid>
             )}
             {user.location === null ? undefined : (
-              <Grid item xs={12} md={3}></Grid>
+              <Grid item xs={12} md={3}>
+              <Typography noWrap={false} variant="h5">
+                {user.location}
+              </Typography></Grid>
             )}
             {user.twitter_username === null ? undefined : (
-              <Grid item xs={12} md={3}></Grid>
+              <Grid item xs={12} md={3}>
+              <Typography noWrap={false} variant="h5">
+                @{user.twitter_username}
+              </Typography></Grid>
             )}
           </Grid>
           <Grid container>
