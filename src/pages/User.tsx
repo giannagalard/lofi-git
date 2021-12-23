@@ -14,11 +14,11 @@ export default function User() {
   const colourTheme = {
     background: "transparent",
     text: "#ffffff",
-    level4: "#8400b8",
-    level3: "#b22ff4",
-    level2: "#b265f6",
-    level1: "#c084f5",
-    level0: "#ecd9fc",
+    level4: "#A66681",
+    level3: "#D685A6",
+    level2: "#DA8598",
+    level1: "#DA9EA6",
+    level0: "#D3B4C4",
   };
 
   const { username } = useParams();
