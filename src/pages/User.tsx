@@ -10,6 +10,7 @@ import BusinessIcon from "@mui/icons-material/Business";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import Loading from "../components/Loading";
 import UserNotFound from "../components/UserNotFound";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import { Link } from "react-router-dom";
 
 export default function User() {
@@ -59,7 +60,18 @@ export default function User() {
                 <Grid item xs={12} md={12}></Grid>
                 <Grid style={{ marginTop: "20px" }}></Grid>
                 {/* AVATAR */}
-                <Grid item xs={12} md={2} margin={"top"}>
+                <Grid
+                  item
+                  xs={12}
+                  md={2}
+                  margin={"top"}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    flexDirection: "column",
+                  }}
+                >
                   <Avatar
                     sx={{
                       width: 150,
@@ -70,6 +82,19 @@ export default function User() {
                     }}
                     src={user.avatar_url}
                   ></Avatar>
+                  <a
+                    href={user.html_url}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <GitHubIcon
+                      style={{
+                        marginTop: "15px",
+                        fontSize: "35px",
+                        color: "#604450",
+                      }}
+                    />
+                  </a>
                 </Grid>
                 <Grid
                   style={{
@@ -161,8 +186,8 @@ export default function User() {
                   {/* SHARE STATS */}
                 </Grid>
                 <Grid container>
-                  <Grid item xs={12} md={3} marginTop={"30px"}>
-                    <h3 className="shareText">Share Stats !</h3>
+                  <Grid item xs={12} md={4} marginTop={"30px"}>
+                    <h3 className="shareText">Share Your Stats !</h3>
                   </Grid>
                   {/* share to twitter */}
                   <Grid item xs={12} md={3} marginTop={"40px"}>
