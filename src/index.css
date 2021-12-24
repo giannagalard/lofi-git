@@ -37,15 +37,10 @@ code {
 html {
   cursor: url(./images/cursor.cur), auto;
   overflow-x: hidden;
-  background-color: var(--home-bg-color);
-}
-
-html,
-body {
-  min-height: -webkit-fill-available;
   scroll-behavior: smooth;
-  --scrollbarBG: rgb(149,94,149);
+  --scrollbarBG: rgb(149, 94, 149);
   --thumbBG: rgb(255, 255, 255);
+  height: calc(100vh - calc(100vh - 100%));
 }
 
 body::-webkit-scrollbar {
