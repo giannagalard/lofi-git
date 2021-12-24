@@ -41,5 +41,5 @@ html {
 
 html,
 body {
-  height: -webkit-fill-available;
+  min-height: -webkit-fill-available;
 }
