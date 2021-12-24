@@ -33,3 +33,7 @@ code {
 
   --footer-background-color: #DA8598;
 }
+
+html {
+  cursor: url(./images/cursor.cur), auto;
+}
