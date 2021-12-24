@@ -165,18 +165,40 @@ export default function User() {
                     <h3 className="shareText">Share Stats !</h3>
                   </Grid>
                   {/* share to twitter */}
-                  <Grid item xs={12} md={3}>
+                  <Grid item xs={12} md={3} marginTop={"40px"}>
                     <a
-                      href={`https://twitter.com/intent/tweet?text=Check%20out%20my%20fun%20Github%20stats%20for%20${user.login}%20https://github.com/${user.login}`}
+                      href={`https://twitter.com/intent/tweet?text=Check%20out%20my%20fun%20GitHub%20stats%20!%20https://lofi-git.vercel.app/user/${user.login}`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <img
-                        src="https://img.icons8.com/color/48/000000/twitter.png"
+                        src="https://img.icons8.com/office/40/000000/twitter.png"
                         alt="twitter"
                       />
                     </a>
-                    </Grid>
+                    {/* share to linkedin */}
+                    <a
+                      href={`https://www.linkedin.com/shareArticle?mini=true&url=https://lofi-git.vercel.app/user/${user.login}&title=Check%20out%20my%20fun%20GitHub%20stats%20!&summary=&source=`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://img.icons8.com/office/40/000000/linkedin.png"
+                        alt="linkedin"
+                      />
+                    </a>
+                    {/* share to facebook */}
+                    <a
+                      href={`https://www.facebook.com/sharer/sharer.php?u=https://lofi-git.vercel.app/user/${user.login}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://img.icons8.com/office/40/000000/facebook.png"
+                        alt="facebook"
+                      />
+                    </a>
+                  </Grid>
                 </Grid>
               </Grid>
             </div>
