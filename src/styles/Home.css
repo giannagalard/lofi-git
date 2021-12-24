@@ -38,9 +38,8 @@
 .welcome {
   display: flex;
   position: absolute;
-  width: 47%;
+  width: 100 %;
   overflow-y: hidden;
-  overflow-x: hidden;
 }
 
 .audioContainer {
