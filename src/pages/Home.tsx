@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Box
         component="div"
-        sx={{ display: { xs: "none", sm: "none", md: "block", lg: "block" } }}
+        sx={{ display: { xs: "none", sm: "none", md: "none", lg: "block" } }}
         className="welcome"
       >
         <div className="bg-image">
@@ -41,7 +41,7 @@ export default function Home() {
 
       <Box
         component="div"
-        sx={{ display: { xs: "block", sm: "block", md: "none", lg: "none" } }}
+        sx={{ display: { xs: "block", sm: "block", md: "block", lg: "none" } }}
         className="welcome"
       >
         <div className="phone-image">
