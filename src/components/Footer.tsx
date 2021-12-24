@@ -7,7 +7,9 @@ interface prop {
 
 export const Footer: React.FC<prop> = (props) => {
   return (
-    <footer id={props.location === ("/home" || "/") ? "footer" : "footerUser"}>
+    <footer
+      id={props.location.slice(0, 6) === "/user/" ? "footerUser" : "footer"}
+    >
       <p className="footerText">
         &copy; COPYRIGHT 2021{" "}
         <a
@@ -24,8 +26,8 @@ export const Footer: React.FC<prop> = (props) => {
           href="https://www.linkedin.com/in/giannagalard/"
         >
           Gianna Galard
-        </a>
-        {" "} :-)
+        </a>{" "}
+        :-)
       </p>
     </footer>
   );
