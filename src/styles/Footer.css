@@ -24,7 +24,7 @@
   width: 100vw;
   height: 3.5rem;
   text-align: center;
-  background-color: var(--user-username-text-color);
+  background-color: var(--footer-background-color);
 }
 
 .footerText {
