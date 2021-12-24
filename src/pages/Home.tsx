@@ -17,9 +17,9 @@ export default function Home() {
             </h1>{" "}
           </div>
           <div className="buttonContainer">
-            {" "} 
+            {/* {" "} 
             <button className="loginButton">Login</button>{" "}
-            <h3 className="orText">OR</h3>
+            <h3 className="orText">OR</h3> */}
             <SearchBar />
           </div>
         </div>
@@ -37,9 +37,9 @@ export default function Home() {
             </h1>{" "}
           </div>
           <div className="mobileButtonContainer">
-            {" "}
+            {/* {" "}
             <button className="loginButton">Login</button>{" "}
-            <h3 className="orText">OR</h3>
+            <h3 className="orText">OR</h3> */}
             <SearchBar />
           </div>
         </div>
