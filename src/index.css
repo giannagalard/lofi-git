@@ -37,6 +37,7 @@ code {
 html {
   cursor: url(./images/cursor.cur), auto;
   overflow-x: hidden;
+  background-color: var(--home-bg-color);
 }
 
 html,
