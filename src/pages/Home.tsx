@@ -11,64 +11,62 @@ export default function Home() {
       <Box
         component="div"
         sx={{ display: { xs: "none", sm: "none", md: "none", lg: "block" } }}
-        className="welcome"
+        className="bg-image"
       >
-        <div className="bg-image">
-          <div className="upperContainer">
-            <div className="textContainer">
-              <h1 className="welcomeText">
-                Welcome To <br /> Lofi Git
-              </h1>{" "}
-            </div>
-            <div className="buttonContainer">
-              {/* {" "} 
+        <div className="upperContainer">
+          <div className="textContainer">
+            <h1 className="welcomeText">
+              Welcome To <br /> Lofi Git
+            </h1>{" "}
+          </div>
+          <div className="buttonContainer">
+            {/* {" "} 
             <button className="loginButton">Login</button>{" "}
             <h3 className="orText">OR</h3> */}
-              <div style={{ width: "35%" }}>
-                <SearchBar />
-              </div>
+            <div style={{ width: "35%" }}>
+              <SearchBar />
             </div>
           </div>
-          <div className="audioContainer">
-            <AudioPlayer
-              style={{ marginLeft: "100px", width: "60%" }}
-              autoPlay={false}
-              src={lofi}
-            />
-          </div>
+        </div>
+        <div className="audioContainer">
+          <AudioPlayer
+            style={{ marginLeft: "100px", width: "60%" }}
+            autoPlay={false}
+            src={lofi}
+          />
         </div>
       </Box>
 
       <Box
         component="div"
         sx={{ display: { xs: "block", sm: "block", md: "block", lg: "none" } }}
-        className="welcome"
+        className="phone-image"
       >
-        <div className="phone-image">
-          <div className="mobileTextContainer">
-            <h1 className="welcomeText">
-              Welcome To <br /> Lofi Git
-            </h1>{" "}
-          </div>
-          <div className="mobileButtonContainer">
-            {/* {" "}
+        <div className="mobileTextContainer">
+          <h1 className="welcomeText">
+            Welcome To <br /> Lofi Git
+          </h1>{" "}
+        </div>
+        <div className="mobileButtonContainer">
+          {/* {" "}
             <button className="loginButton">Login</button>{" "}
             <h3 className="orText">OR</h3> */}
+          <div>
             <SearchBar />
           </div>
-          <div
-            style={{
-              width: "100vw",
-              display: "flex",
-              justifyContent: "center",
-            }}
-          >
-            <AudioPlayer
-              style={{ width: "95%", marginTop: "30px" }}
-              autoPlay={false}
-              src={lofi}
-            />
-          </div>
+        </div>
+        <div
+          style={{
+            width: "100vw",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <AudioPlayer
+            style={{ width: "95%", marginTop: "30px" }}
+            autoPlay={false}
+            src={lofi}
+          />
         </div>
       </Box>
     </>

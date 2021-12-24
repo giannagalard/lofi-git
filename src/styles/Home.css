@@ -4,12 +4,12 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw;
   display: flex;
   justify-content: flex-start;
   background-color: var(--home-bg-color);
   flex-direction: column;
+  height: 100vh;
+  width: 100vw;
 }
 
 /* Set Background Image for Mobile and small devices */
@@ -18,11 +18,13 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw;
   display: flex;
   align-items: center;
   flex-direction: column;
+  position: absolute;
+  overflow-y: hidden;
+  height: 100vh;
+  width: 100vw;
   background-color: var(--phone-bg-color);
 }
 
@@ -32,14 +34,6 @@
   font-style: normal;
   font-weight: normal;
   src: url(../fonts/CherryBomb.ttf);
-}
-
-/* Welcome To Lofi Git */
-.welcome {
-  display: flex;
-  position: absolute;
-  width: 100%;
-  overflow-y: hidden;
 }
 
 .audioContainer {
@@ -104,6 +98,14 @@
   background-color: var(--button-background);
   box-shadow: 0 5px var(--button-pressed);
   transform: translateY(3px);
+}
+
+.mobileButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
 }
 
 .textContainer {
