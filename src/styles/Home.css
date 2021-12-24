@@ -104,8 +104,8 @@ html {
 
 /* Make button independent of text */
 .buttonContainer {
-  width: 25%;
+  width: 47%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }

@@ -20,7 +20,9 @@ export default function Home() {
             {/* {" "} 
             <button className="loginButton">Login</button>{" "}
             <h3 className="orText">OR</h3> */}
-            <SearchBar />
+            <div style={{ width: "25%" }}>
+              <SearchBar />
+            </div>
           </div>
         </div>
       </Box>
