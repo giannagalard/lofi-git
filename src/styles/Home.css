@@ -12,7 +12,6 @@ html {
   width: 100vw;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-end;
   background-color: var(--home-bg-color);
   flex-direction: column;
 }
@@ -44,6 +43,20 @@ html {
   display: flex;
   position: absolute;
   width: 47%;
+}
+
+.audioContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 50%;
+  height: 60vh;
+}
+
+.upperContainer {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
 }
 
 /* Font and Bordering for Welcome Text */
@@ -108,4 +121,26 @@ html {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.rhap_container {
+  background-color: rgba(214, 159, 178, 0.6) !important;
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+
+.rhap_container svg {
+  color: #604450;
+}
+
+.rhap_volume-indicator {
+  background-color: #604450 !important;
+}
+
+.rhap_progress-indicator {
+  background-color: #604450 !important;
+}
+
+.rhap_progress-filled {
+  background-color: #604450 !important;
 }
