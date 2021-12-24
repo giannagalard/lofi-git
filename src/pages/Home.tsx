@@ -32,7 +32,7 @@ export default function Home() {
           <div className="audioContainer">
             <AudioPlayer
               style={{ marginLeft: "100px", width: "60%" }}
-              autoPlay
+              autoPlay={false}
               src={lofi}
             />
           </div>
@@ -65,7 +65,7 @@ export default function Home() {
           >
             <AudioPlayer
               style={{ width: "95%", marginTop: "30px" }}
-              autoPlay
+              autoPlay={false}
               src={lofi}
             />
           </div>
