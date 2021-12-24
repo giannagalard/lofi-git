@@ -38,3 +38,9 @@ html {
   cursor: url(./images/cursor.cur), auto;
   overflow-x: hidden;
 }
+
+html,
+body {
+  min-width: 100%;
+  min-height: 100%;
+}
