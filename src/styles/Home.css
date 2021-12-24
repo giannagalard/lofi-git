@@ -14,7 +14,8 @@ html {
   justify-content: flex-start;
   background-color: var(--home-bg-color);
   flex-direction: column;
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 /* Set Background Image for Mobile and small devices */
@@ -29,7 +30,8 @@ html {
   align-items: center;
   flex-direction: column;
   background-color: var(--phone-bg-color);
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 /* Set Cute Font :-) */
