@@ -168,9 +168,9 @@ export default function User() {
                   <Grid className="card" item xs={12}>
                     <p className="statsText">Languages Used</p>
                     <Grid container>
-                      {[...languages].map((lang: String) => {
+                      {[...languages].map((lang: String, index: number) => {
                         return (
-                          <Grid item xs={12} sm={3}>
+                          <Grid key={index} item xs={12} sm={3}>
                             <div
                               style={{
                                 display: "flex",
