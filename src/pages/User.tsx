@@ -28,12 +28,14 @@ export default function User() {
   const [valid, setValid] = useState(false);
   const [isLoading, setLoading] = useState(true);
   const [user, setUser] = useState<any>({});
+  const [languages, setLanguages] = useState<any>([]);
   useEffect(() => {
     fetchData(
       username as string,
       setUser as Function,
       setValid as Function,
-      setLoading as Function
+      setLoading as Function,
+      setLanguages as Function
     );
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -160,8 +162,43 @@ export default function User() {
                 </Grid>
               </Box>
 
+              {/* LANGUAGES GRID */}
+              {languages.size === 0 ? undefined : (
+                <Grid container>
+                  <Grid className="card" item xs={12}>
+                    <p className="statsText">Languages Used</p>
+                    <Grid container>
+                      {[...languages].map((lang: String) => {
+                        return (
+                          <Grid item xs={12} sm={3}>
+                            <div
+                              style={{
+                                display: "flex",
+                                flexDirection: "row",
+                                justifyContent: "center",
+                                alignItems: "center",
+                              }}
+                            >
+                              <i
+                                style={{
+                                  marginRight: "10px",
+                                  fontSize: "24px",
+                                  color: "var(--user-upper-text-color)",
+                                }}
+                                className={`devicon-${lang.toLowerCase()}-plain`}
+                              ></i>{" "}
+                              <h1 className="lang">{lang}</h1>
+                            </div>
+                          </Grid>
+                        );
+                      })}
+                    </Grid>
+                  </Grid>
+                </Grid>
+              )}
+
               {/* GITHUB ACTIVITY */}
-              <Grid sx={{ marginTop: "80px" }} container>
+              <Grid sx={{ marginTop: "40px" }} container>
                 <Grid className="activitySquares" item xs={12}>
                   <GitHubCalendar
                     username={user.login}

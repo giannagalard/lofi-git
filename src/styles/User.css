@@ -14,6 +14,13 @@
   background-color: var(--user-bg-color);
 }
 
+.lang {
+  font-family: CherryBomb;
+  font-style: normal;
+  font-weight: normal;
+  color: var(--user-upper-text-color);
+}
+
 .upperText {
   font-family: "Patrick Hand", cursive;
   font-size: 33px;
